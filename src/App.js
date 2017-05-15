@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './js/bootstrap.min.js';
+import './fonts/*';
+import  './css/bootstrap-theme.min.css';
+import  './css/bootstrap-theme.min.css.map';
+import './css/bootstrap.min.css';
+import './css/bootstrap.min.css.map';
+
 
 class App extends Component {
   render() {
