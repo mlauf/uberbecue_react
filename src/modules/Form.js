@@ -40,8 +40,8 @@ class Form extends Component{
             </label>
             <label>
                 Position:
-                <input class="form-control" type="text" name"grilllat" value="lat" onChange={this.handleChange} />
-                <input type="text" name"grilllong" value="long" onChange={this.handleChange}/>
+                <input class="form-control" type="text" name="grilllat" value="lat" onChange={this.handleChange} />
+                <input type="text" name="grilllong" value="long" onChange={this.handleChange}/>
             </label>
             <select value={this.state.grilltype} onChange={this.handleChange}>
                 <option value="coal">Kohle-Grill</option>
