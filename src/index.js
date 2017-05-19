@@ -7,6 +7,11 @@ import Home from './modules/Home'
 import About from './modules/About'
 import Repos from './modules/Repos'
 
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
+
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
