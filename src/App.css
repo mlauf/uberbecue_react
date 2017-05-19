@@ -1,4 +1,6 @@
 .App {
+  display: flex;
+  background-image: url('./background.jpg');
   text-align: center;
 }
 
@@ -12,17 +14,12 @@
   padding: 10px;
   color: white;
 }
-
+.App-banner {
+  width: 100%;
+  height: auto;
+}
 .App-intro {
   font-size: large;
 }
 
 
-button {
-  background-color: #333;
-  border:0;
-  margin-top: 500px;
-  padding: 12px 60px;
-  font-size: 18px;
-  width: 300px;
-}
