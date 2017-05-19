@@ -13,6 +13,7 @@ class Form extends Component{
         this.state = {grilldescription:''};
         this.state = {grilllat: ''};
         this.state = {grilllong: ''};
+        this.state = {grilltype: ''};
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSumit = this.handleSumit.bind(this);
@@ -22,6 +23,8 @@ class Form extends Component{
         this.setState({grilldescription: event.target.grilldescription});
         this.setState({grilllat: event.target.grilllat});
         this.setState({grilllong: event.target.grilllong});
+        this.setState({grilltype: event.target.grilltype});
+
     }
     handleSumit(event){
         alert(this.state.gillname +' angelegt!')
@@ -40,7 +43,13 @@ class Form extends Component{
                 <input class="form-control" type="text" name"grilllat" value="lat" onChange={this.handleChange} />
                 <input type="text" name"grilllong" value="long" onChange={this.handleChange}/>
             </label>
-            <button  bsStyle="sucess" bsSize="large">Anlegen</button>
+            <select value={this.state.grilltype} onChange={this.handleChange}>
+                <option value="coal">Kohle-Grill</option>
+                <option value="gas">Gas-Grill</option>
+                <option value="electric">Elektro-Grill</option>
+                <option value="other">Anderer</option>
+            </select>
+            <button  bsStyle="success" bsSize="large">Anlegen</button>
             {/*<input type="submit" value="Anlegen" bsStyle class="btn btn-success" />*/}
         </form>
     }

@@ -19,7 +19,7 @@ class App extends Component {
 
         </div>
         <div className="well">
-            <Button bsStyle="primary" bsStyle="danger" bsSize="large" block componentClass={Link} href="/about">grill</Button>
+            <Button bsStyle="primary" bsSize="large" block componentClass={Link} href="/about">grill</Button>
           <Button bsSize="large" bsStyle="danger" block componentClass={Link} href="/repos">Einen Grill verleihen</Button>
 
 
