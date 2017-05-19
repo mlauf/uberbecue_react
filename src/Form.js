@@ -2,6 +2,9 @@
  * Created by Manuel on 15.05.2017.
  */
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import { Button } from 'react-bootstrap';
 
 class Form extends Component{
     constructor(props){
@@ -37,8 +40,8 @@ class Form extends Component{
                 <input class="form-control" type="text" name"grilllat" value="lat" onChange={this.handleChange} />
                 <input type="text" name"grilllong" value="long" onChange={this.handleChange}/>
             </label>
-
-            <input type="submit" value="Anlegen" class="btn btn-success" />
+            <button  bsStyle="sucess" bsSize="large">Anlegen</button>
+            {/*<input type="submit" value="Anlegen" bsStyle class="btn btn-success" />*/}
         </form>
     }
 }
