@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-export default React.createClass({
+class About extends Component {
   render() {
     return <div>About</div>
   }
-})
+}
+export default About;

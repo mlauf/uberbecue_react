@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import logo from './loggo.png';
+import banner from './bannerr.jpg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import { Button } from 'react-bootstrap';
-import { Router, Route, Switch } from 'react-router'
+import {Link} from 'react-router';
 
 class App extends Component {
   render() {
@@ -12,15 +13,18 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+            <h2>Grillparty und keinen Grill? Dann miete ganz einfach einen!</h2>
+           <img src={banner} className="App-banner"alt=""/>
+
+
         </div>
         <div className="well">
-    <Button bsStyle="primary" bsSize="large" block>Block level button</Button>
-    <Button bsSize="large" block>Block level button</Button>
-        
-        
-        
-  </div>
+            <Button bsStyle="primary" bsStyle="danger" bsSize="large" block componentClass={Link} href="/about">grill</Button>
+          <Button bsSize="large" bsStyle="danger" block componentClass={Link} href="/repos">Einen Grill verleihen</Button>
+
+
+
+      </div>
       </div>
     );
   }
