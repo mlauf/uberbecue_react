@@ -47,6 +47,7 @@ class Form extends Component{
                 <option value="coal">Kohle-Grill</option>
                 <option value="gas">Gas-Grill</option>
                 <option value="electric">Elektro-Grill</option>
+                <option value="smoker">Smoker</option>
                 <option value="other">Anderer</option>
             </select>
             <button  bsStyle="success" bsSize="large">Anlegen</button>
@@ -54,3 +55,4 @@ class Form extends Component{
         </form>
     }
 }
+export default Form;
